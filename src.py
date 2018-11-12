@@ -46,7 +46,7 @@ def print_init_volumetrics():
     print("INITIAL TABLE VOLUMETRICS")
     print("--------------------------------------\n")
     for table in tab_stack:
-        answer = table.calc_initial_volume(overhead, growth_rate, num_years)
+        answer = table.calc_initial_volume(overhead)
         print(table.tab_name + " : " + str(answer) + "\n")
         total += answer
     print("--------------------------------------\n")

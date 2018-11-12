@@ -11,10 +11,10 @@ class Table:
         return answer
 
     def calc_growth_volume(self, overhead, growth_rate, num_years):
-        answer = self.calc_initial_volume(overhead, growth_rate, num_years)
+        answer = self.calc_initial_volume(overhead)
 
-        for i in range(1, num_years):
-            answer += answer * float(growth_rate)
+        for i in range(0, num_years):
+            answer = answer * float(1 + growth_rate)
 
         #answer += answer * (growth_rate * num_years)
 
