@@ -16,8 +16,6 @@ class Table:
         for i in range(0, num_years):
             answer = answer * float(1 + growth_rate)
 
-        #answer += answer * (growth_rate * num_years)
-
         return answer
 
 
